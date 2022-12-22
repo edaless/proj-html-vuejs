@@ -94,7 +94,7 @@ $color-header: #ffffff;
     margin-left: 20px;
     font-size: 11px;
     font-weight: 600;
-    color: #858a8d;
+    color: var(--scritte-grey);
 
     &:hover,
     &.active {

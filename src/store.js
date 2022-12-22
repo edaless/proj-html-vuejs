@@ -32,6 +32,7 @@ export const store = reactive({
             active: false
         }
 
-    ]
+    ],
+    b1: "Avanda & Associates legal team announce deal to open up oil & gas"
 
 });

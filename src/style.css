@@ -11,6 +11,10 @@
   --w-larghezza: 800px;
   /* var(--color-green) */
   --color-green: #55a099;
+  /* var(--scritte-grey) */
+  --scritte-grey: #858a8d;
+  /* var(--scritte-dark-grey) */
+  --scritte-dark-grey: #6a6a6a;
   /* var(--h-header) */
   --h-header: 50px;
 
