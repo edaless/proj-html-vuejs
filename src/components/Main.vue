@@ -36,6 +36,10 @@ export default {
                 </div>
             </div>
         </div>
+
+        <div class="b2">
+            <img src="../../public/img/video_law_home_preview.jpg" alt="">
+        </div>
     </div>
 </template>
 
@@ -45,39 +49,55 @@ export default {
     margin-top: var(--h-header);
 
 
-}
 
-.b1 {
-    border-top: 2px solid var(--color-green);
-    padding: 15px 0;
-    color: var(--scritte-dark-grey);
-    font-weight: 600;
-    font-size: 12px;
-    background-color: #fcfcfc;
 
-    .larghezza {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .b1 {
+        border-top: 2px solid var(--color-green);
+        padding: 15px 0;
+        color: var(--scritte-dark-grey);
+        font-weight: 600;
+        font-size: 12px;
+        background-color: #fcfcfc;
+
+        .larghezza {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .socials {
+            display: flex;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-green);
+            width: 35px;
+            height: 35px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-left: 15px;
+            text-decoration: none;
+
+            color: white;
+        }
     }
-}
 
-.socials {
-    display: flex;
-}
+    .b2 {
 
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-green);
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-left: 15px;
-    text-decoration: none;
+        height: 500px;
+        overflow: hidden;
+        // margin-top: -100px;
 
-    color: white;
+        img {
+            margin-top: -50px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
 }
 </style>
