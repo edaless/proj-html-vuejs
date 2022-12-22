@@ -40,6 +40,10 @@ export default {
         <div class="b2">
             <img src="../../public/img/video_law_home_preview.jpg" alt="">
         </div>
+
+        <div class="b3">
+
+        </div>
     </div>
 </template>
 
@@ -57,7 +61,8 @@ export default {
         color: var(--scritte-dark-grey);
         font-weight: 600;
         font-size: 12px;
-        background-color: #fcfcfc;
+        background-color: var(--sfondo-grey);
+
 
         .larghezza {
             display: flex;
@@ -88,14 +93,49 @@ export default {
 
     .b2 {
 
-        height: 500px;
+        height: 400px;
         overflow: hidden;
+        // display: flex;
+        // justify-content: center;
         // margin-top: -100px;
+        object-fit: cover;
 
         img {
             margin-top: -50px;
             width: 100%;
             height: auto;
+        }
+    }
+
+    .b3 {
+        background-color: var(--sfondo-grey);
+        height: 500px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1154px) {
+    .cont {
+
+
+        .b2 {
+
+            height: 300px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 874px) {
+    .cont {
+
+
+        .b2 {
+
+            height: 200px;
         }
     }
 
