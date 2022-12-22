@@ -60,6 +60,17 @@ export default {
 
             </div>
         </div>
+
+        <div class="b5">
+            <div class="larghezza">
+                <div class="testo">
+                    QUESTIONS ABOUT A JUDICAL ISSUE? ASK OUR EXPERTS.
+                </div>
+                <div class="button">
+                    ASK AN EXPERT
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -140,7 +151,7 @@ export default {
         background-color: white;
         border-top: 1px solid #e3e3e3;
         border-bottom: 1px solid #e3e3e3;
-        padding: 30px 0;
+        padding: 50px 0;
 
         .larghezza {
             display: flex;
@@ -149,7 +160,35 @@ export default {
         }
     }
 
+    .b5 {
+        padding: 40px 0;
+        background-color: var(--color-green);
 
+        .larghezza {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .testo {
+            color: white;
+            font-weight: 600;
+        }
+
+        .button {
+            color: white;
+            font-weight: 600;
+            font-size: 12px;
+            padding: 15px 20px;
+            background-color: #ffffff13;
+            border-radius: 2px;
+            // per sicurezza aggiungo:
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
 
 
 

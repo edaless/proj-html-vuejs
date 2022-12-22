@@ -24,12 +24,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-$w-contain: 200px;
-
 .contain {
 
-    width: $w-contain;
-    height: calc($w-contain * 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,8 +34,8 @@ $w-contain: 200px;
 
 
     i {
-        margin-bottom: 15px;
-        font-size: 25px;
+        margin-bottom: 10px;
+        font-size: 20px;
         color: var(--color-green);
     }
 
