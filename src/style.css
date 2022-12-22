@@ -4,3 +4,21 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+
+:root {
+  /* var(--w-larghezza) */
+  --w-larghezza: 800px;
+  /* var(--color-green) */
+  --color-green: #55a099;
+  /* var(--h-header) */
+  --h-header: 50px;
+
+}
+
+.larghezza {
+  max-width: var(--w-larghezza);
+  margin-left: calc((100% - var(--w-larghezza)) / 2);
+
+  /* background-color: rgba(0, 0, 255, 0.027); */
+}
