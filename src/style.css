@@ -15,9 +15,10 @@
   --scritte-grey: #858a8d;
   /* var(--scritte-dark-grey) */
   --scritte-dark-grey: #6a6a6a;
+  /* var(--scritte-very-dark-grey) */
+  --scritte-very-dark-grey: #3b4252;
   /* var(--sfondo-grey) */
-  --sfondo-grey: #616161;
-  /* --sfondo-grey: #f8f8f8; */
+  --sfondo-grey: #f8f8f8;
   /* var(--h-header) */
   --h-header: 50px;
 

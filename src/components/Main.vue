@@ -1,8 +1,14 @@
 <script >
 
 import { store } from '../store.js';
+import Card from './Card.vue';
+import Tick from './Tick.vue';
 
 export default {
+    components: {
+        Card,
+        Tick
+    },
     data() {
         return {
             store
@@ -42,7 +48,17 @@ export default {
         </div>
 
         <div class="b3">
+            <div class="larghezza">
+                <Card v-for="card in store.b3" :msg="card" />
+            </div>
+        </div>
 
+        <div class="b4">
+            <div class="larghezza">
+                <Tick v-for="tick in store.b4" :msg="tick" />
+
+
+            </div>
         </div>
     </div>
 </template>
@@ -109,8 +125,36 @@ export default {
 
     .b3 {
         background-color: var(--sfondo-grey);
-        height: 500px;
+        // height: 300px;
+        padding: 50px 0;
+
+        .larghezza {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
+
+    .b4 {
+
+        background-color: white;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+        padding: 30px 0;
+
+        .larghezza {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+
+
+
+
+
 
 }
 
