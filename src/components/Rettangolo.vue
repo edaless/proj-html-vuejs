@@ -28,7 +28,7 @@ export default {
 .contain {
     margin-top: 20px;
     padding: 15px;
-    background-color: var(--sfondo-grey);
+    background-color: rgb(238, 238, 238);
     display: flex;
     align-items: center;
 

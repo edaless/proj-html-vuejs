@@ -94,6 +94,27 @@ export default {
                 </div>
             </div>
         </div>
+
+
+        <div class="b7">
+            <div class="larghezza">
+                <div class="logo-envato">
+                    <img src="../../public/img/envato-logo.png" alt="">
+
+                </div>
+                <em>
+                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis molestias numquam molestiae
+                    aliquam natus non labore, sapiente est placeat consectetur minus vero delectus nam. Nobis
+                    officia temporibus vel debitis odio!"
+                </em>
+                <strong>
+                    <!-- spazio: &#160; -->
+                    <!-- bullet: &#8226; -->
+                    Nigel Rawlinson &#160; &#8226; &#160; Senior Partner
+                </strong>
+            </div>
+
+        </div>
     </div>
 </template>
 
@@ -255,6 +276,41 @@ export default {
         }
     }
 
+
+    .b7 {
+        height: 400px;
+        background-image: url("../../public/img/showeare-parallax.jpg");
+        background-position: center bottom 30%;
+        background-size: cover;
+        // padding: 30px 0;
+
+        .larghezza {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+            .logo-envato {
+                width: 15%;
+                margin-bottom: 30px;
+
+                img {
+                    width: 100%;
+                }
+
+
+            }
+
+            em {
+                line-height: 25px;
+                margin-bottom: 30px;
+            }
+
+
+        }
+    }
 
 
 
