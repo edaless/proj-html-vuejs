@@ -312,7 +312,7 @@ export default {
     }
 
     .b8 {
-        padding: 30px 0;
+        padding: 70px 0;
         background-color: var(--sfondo-grey);
 
         .larghezza {
