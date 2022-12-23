@@ -102,6 +102,20 @@ export const store = reactive({
         }
 
 
+    ],
+    b8: [
+        {
+            titolo: "INTERNATIONAL",
+            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloribus mollitia pariatur accusamus excepturi in neque suscipit."
+        },
+        {
+            titolo: "PARTNERSHIPS",
+            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloribus mollitia pariatur accusamus excepturi in neque suscipit."
+        },
+        {
+            titolo: "EXCELLENCE",
+            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloribus mollitia pariatur accusamus excepturi in neque suscipit."
+        }
     ]
 
 });

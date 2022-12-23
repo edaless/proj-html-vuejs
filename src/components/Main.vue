@@ -48,7 +48,6 @@ export default {
         <div class="b2">
             <img src="../../public/img/video_law_home_preview.jpg" alt="">
         </div>
-
         <div class="b3">
             <div class="larghezza">
                 <Card v-for="card in store.b3" :msg="card" />
@@ -114,6 +113,15 @@ export default {
                 </strong>
             </div>
 
+        </div>
+
+
+        <div class="b8">
+            <div class="larghezza">
+
+                <Card v-for="(elemento, index) in store.b8" :msg="elemento" :immagine="index + 1" />
+                <!-- l'immagine è index +1 altrimenti la prima sarebbe 0, che è uguale al false -->
+            </div>
         </div>
     </div>
 </template>
@@ -312,7 +320,17 @@ export default {
         }
     }
 
+    .b8 {
+        padding: 30px 0;
+        background-color: var(--sfondo-grey);
 
+        .larghezza {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
 
 
 }

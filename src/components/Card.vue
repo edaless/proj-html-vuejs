@@ -3,7 +3,16 @@
 
 
 export default {
-    props: ["msg"]
+    props: ["msg", "immagine"],
+    data() {
+        return {
+            immagini: [
+                "../../public/img/law_7.jpg",
+                "../../public/img/law_8.jpg",
+                "../../public/img/law_3.jpg"
+            ]
+        }
+    }
 }
 
 
@@ -12,13 +21,19 @@ export default {
 <template>
     <div class="contain">
         <div class="corpo">
+            <div class="immagine" v-if="immagine">
+                <img :src="immagini[immagine - 1]" alt="">
+            </div>
+
+
             <div class="title">
                 {{ msg.titolo }}
             </div>
             <div class="text">
                 {{ msg.text }}
             </div>
-            <div class="button">
+            <!-- il button non ci sarà nelle card con immagine -->
+            <div class="button" v-if="!immagine">
                 LEARN MORE
             </div>
 
@@ -33,23 +48,31 @@ $w-contain: 300px;
 .contain {
 
     width: $w-contain;
-    height: calc($w-contain * 0.8);
     background-color: white;
     border-top: 4px solid var(--color-green);
 
     .corpo {
         width: 100%;
         height: 100%;
-        padding: 0 10%;
+        padding: 30px;
         border: 1px solid rgb(228, 228, 228);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
+        .immagine {
+            width: 100%;
+            margin-bottom: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
 
         .title {
-            font-size: 16px;
+            font-size: 12px;
+            font-weight: 800;
         }
 
         .text {
