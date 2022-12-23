@@ -84,18 +84,7 @@ $w-contain: 300px;
             margin: 15px 0;
         }
 
-        .button {
-            background-color: var(--scritte-very-dark-grey);
-            color: white;
-            font-size: 12px;
-            font-weight: 700;
-            padding: 8px 13px;
-            border-radius: 2px;
-            // per sicurezza:
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
     }
 }
 </style>

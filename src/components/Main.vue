@@ -228,16 +228,7 @@ export default {
         }
 
         .button {
-            color: white;
-            font-weight: 600;
-            font-size: 12px;
-            padding: 7px 20px;
             background-color: #ffffff13;
-            border-radius: 2px;
-            // per sicurezza aggiungo:
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
         }
     }
