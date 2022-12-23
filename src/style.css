@@ -30,3 +30,10 @@
 
   /* background-color: rgba(0, 0, 255, 0.027); */
 }
+
+.title {
+
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--scritte-very-dark-grey);
+}

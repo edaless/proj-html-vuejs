@@ -2,10 +2,12 @@
 
 import { store } from '../store.js';
 import Card from './Card.vue';
+import Rettangolo from './Rettangolo.vue';
 import Tick from './Tick.vue';
 
 export default {
     components: {
+        Rettangolo,
         Card,
         Tick
     },
@@ -68,6 +70,27 @@ export default {
                 </div>
                 <div class="button">
                     ASK AN EXPERT
+                </div>
+            </div>
+        </div>
+
+        <div class="b6">
+            <div class="larghezza">
+                <div class="title">
+                    GLOBAL CHALLENGE. WORLD CLASS RESPONSE
+                </div>
+                <div class="riga"></div>
+                <div class="rettangoli">
+                    <div class="colonna" v-for="(colonna, indice) in store.b6">
+                        <div class="title">
+                            {{ colonna.titolo }}
+                        </div>
+
+                        <Rettangolo v-for="(cosa, index) in colonna.stuff" :msg="cosa" :colonna="indice + 1"
+                            :immagine="index + 1" />
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -155,7 +178,7 @@ export default {
 
         .larghezza {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
     }
@@ -179,7 +202,7 @@ export default {
             color: white;
             font-weight: 600;
             font-size: 12px;
-            padding: 15px 20px;
+            padding: 7px 20px;
             background-color: #ffffff13;
             border-radius: 2px;
             // per sicurezza aggiungo:
@@ -190,6 +213,47 @@ export default {
         }
     }
 
+    .b6 {
+        padding: 70px 0;
+
+        .larghezza {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+        .riga {
+            width: 120px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ececec;
+
+        }
+
+
+        .title {
+            font-size: 17px;
+        }
+
+        .colonna {
+            width: 31%;
+            // background-color: red;
+
+            .title {
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+
+        .rettangoli {
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+        }
+    }
 
 
 

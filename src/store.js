@@ -65,6 +65,43 @@ export const store = reactive({
             titolo: "LOCAL KNOWLEDGE",
             text: "Nullam fringilla tristique elit id varius. Lorem lacinia quam nec venenatis dignissim."
         }
+    ],
+    b6: [
+        {
+            titolo: "OUR PEOPLE",
+            stuff: [
+                "Deborah Brown",
+                "Allen Lucas",
+                "Muriel Potter",
+                "Ken Douglas",
+                "Loretta Harris",
+                "Phil Russel"
+            ]
+        },
+        {
+            titolo: "OUR PRACTICE AREAS",
+            stuff: [
+                "Tax Litigation",
+                "Aquisitions",
+                "Financial Advice",
+                "International",
+                "Oil and Gas",
+                "Capital Markets"
+            ]
+        },
+        {
+            titolo: "OUR PUBLICATIONS",
+            stuff: [
+                "Low Oil Prices",
+                "Cost of Divorce",
+                "2015 Tax Laws",
+                "Surveys Matter",
+                "In-House Work",
+                "Obama Care"
+            ]
+        }
+
+
     ]
 
 });

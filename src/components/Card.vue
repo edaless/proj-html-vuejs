@@ -12,7 +12,7 @@ export default {
 <template>
     <div class="contain">
         <div class="corpo">
-            <div class="titolo">
+            <div class="title">
                 {{ msg.titolo }}
             </div>
             <div class="text">
@@ -48,9 +48,8 @@ $w-contain: 300px;
         justify-content: center;
 
 
-        .titolo {
-            font-weight: 600;
-            color: var(--scritte-very-dark-grey);
+        .title {
+            font-size: 16px;
         }
 
         .text {
@@ -67,8 +66,12 @@ $w-contain: 300px;
             color: white;
             font-size: 12px;
             font-weight: 700;
-            padding: 10px 15px;
-            border-radius: 3px;
+            padding: 8px 13px;
+            border-radius: 2px;
+            // per sicurezza:
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

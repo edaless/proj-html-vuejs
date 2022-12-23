@@ -11,7 +11,7 @@ export default {
     <div class="contain">
 
         <i class="fa-sharp fa-solid fa-check"></i>
-        <div class="titolo">
+        <div class="title">
             {{ msg.titolo }}
         </div>
         <div class="text">
@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 .contain {
-
+    width: 190px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,23 +35,23 @@ export default {
 
     i {
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 12px;
         color: var(--color-green);
     }
 
-    .titolo {
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--scritte-very-dark-grey);
+    .title {
+        font-size: 11px;
+        font-weight: 800;
     }
 
     .text {
-        font-size: 12px;
+        font-size: 11px;
         display: flex;
         text-align: center;
         line-height: 20px;
         color: #545454;
-        margin-top: 15px;
+        margin-top: 10px;
+        line-height: 20px;
     }
 }
 </style>
